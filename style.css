@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #9890e3, #b1f4cf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.68);
+}
+
+.contact{
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+
+.contact::before{
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 2px;
+  background: rgba(34, 34, 34, 0.23);
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.feedback-from{
+  width: 75%;
+  margin-left: 75px;
+}
+.details{
+  margin-bottom: 15px;
+  text-align: center;
+}
+.details i{
+  font-size: 25px;
+  color: #714ae7;
+  margin-bottom: 5px;
+}
+.topic{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.info-one,
+.info-two{
+  font-size: 14px;
+  color: #82828a;
+}
+.topic-text{
+  font-size: 25px;
+  font-weight: 600;
+  color: #714ae7;
+  margin-bottom: 10px;
+}
+.input-box{
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+.input-box input,
+.input-box textarea{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #f0f1f8;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.input-box textarea{
+  resize: none;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.message-box{
+  min-height: 110px;
+}
+.button{
+  display: inline-block;
+}
+.button input[type="submit"]{
+  color: #ffffff;
+  background: #714ae7;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.button input[type="submit"]:hover{
+  background: linear-gradient(45deg, #632fcc, #986afa)
+}
+
+.checkbox{
+  width: 100%;
+  height: 50px;
+  margin: 50px 0;
+
+}
+
+.checkbox.style-c {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox.style-c input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark {
+  background-color: #632fcc;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.checkbox.style-c:hover input ~ .checkbox__checkmark {
+  background-color: #986afa;
+}
+.checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
+  background-color: #632fcc;
+}
+.checkbox.style-c .checkbox__checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.checkbox.style-c .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.checkbox.style-c .checkbox__body {
+  color: #333;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.form-control{
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-bottom: #714ae7 1px solid;
+  border-top: #714ae7 1px solid;
+  border-left: #714ae7 1px solid;
+  border-right: #714ae7 1px solid;
+}
+.input-box label{
+  font-size:13px;
+  color:grey;
+  padding-left: 20px;
+}
+.checkbox label{
+  font-size:13px;
+  color:grey;
+  padding-left: 20px;
+}
+.button-primary{
+  position: absolute;
+  color: #ffffff;
+  background: #714ae7;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  right: 780px;
+  top: 806px;
+}
